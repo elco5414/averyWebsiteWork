@@ -1,2 +1,2 @@
-# averyWebsiteWork
-a start to building a website for avery
+# website for me
+a start to building a website 
