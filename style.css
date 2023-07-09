@@ -1,75 +1,47 @@
-body{
-  background-color: #C6C3C1;
-}
-.topButton{
-  background-color: #FAD8C5;
-  color: black;
-  padding: 10px 20px;
-  border-radius: 0px;
-  border: none;
-  cursor: pointer;
-  font-family: Helvetica;
-}
-.topImage{
-  background-image: 
-}
-.about{
-  background-color: #F8F4F1;
-  margin: 15px;
-}
-.portfolio{
-  background-color: #F8F4F1;
-}
-.resume{
-  background-color:#847387;
-  font-family: Helvetica;
-  color: #F8F4F1;
-  border: none;
-  margin: 15px;
-  font-size: 15px;
-  
-}
-h1,h2,p{
-  margin: 20px;
-}
-h1{
-  color:#847387;
-  font-family: serif;
-  font-size: 56px;
-}
-h2{
-  color:#301D10;
-  font-family: serif;
-  font-size:26px;
-}
-p{
-  font-family: sans-serif;
-  color: #636260;
-}
-footer{
-  background-color: #F8F4F1;
-  margin: 15px;
-}
-.port2{
-  background-color: #C6C3C1
-  margin: 35px;
-}
-.skill1,.skill2, .skill3, .skill4{
-  color:#301D10;
-}
-/* Style all font awesome icons */
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 5px;
-  text-align: center;
-  text-decoration: none;
-  color: #C6C3C1;
+body {
+  background-color: #1F2430;
+  margin: 0;
+  padding: 0;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+header{
+  position: fixed;
+  margin-top: 75px;
+  margin-left: 30px;
+  background-color: none;
+  padding: 2px;
+  text-align: center;
+}
+span{
+  font-size: 25px;
+}
+p{
+  position: fixed;
+  margin-top: 35px;
+  margin-left: 5px;
+  margin-right: 80px;
+  background-color: none;
+  padding: 0px;
+  text-align: left;
+  color: #73D0FF;
+}
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.button {
+  border: none;
+  background: none;
+  display: block;
+  width: 85px;
+  height: 25px;
+  color: #FFD173;
+  text-align: left;
+  line-height: 35px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 h3{
   margin: 5px;
