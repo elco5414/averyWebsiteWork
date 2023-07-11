@@ -1,2 +1,1 @@
-# website for me
-a start to building a website 
+# welcome to my personal website
