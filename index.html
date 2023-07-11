@@ -18,6 +18,11 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+  <div class= "container">
+    <h1> welcome, <span class = "auto-type"></span></h1>
+  </div>
+<!--
   <header>
     <span style="color:#73D0FF">hi, </span>
     <span style="color:#D5FF80"> elizabeth coleman</span>
@@ -34,5 +39,17 @@
     <a href="#" class="button">experience</a>
     <a href="#" class="button">projects</a>
   </div>
+-->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed(".auto-type",{
+      strings: ["elizabeth coleman here"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    }
+    )
+  </script>
 </body>
 </html>
