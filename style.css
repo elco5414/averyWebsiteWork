@@ -4,33 +4,39 @@ body {
   padding: 0;
 }
 
-header{
-  position: fixed;
-  margin-top: 75px;
-  margin-left: 30px;
-  background-color: none;
-  padding: 2px;
-  text-align: center;
-}
 span{
   color: #61a1f6;
 }
-p{
-  position: fixed;
-  margin-top: 35px;
-  margin-left: 5px;
-  margin-right: 80px;
-  background-color: none;
-  padding: 0px;
-  text-align: left;
-  color: #73D0FF;
-}
+
 .button-container {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
 }
 
+.contacts-button-container{
+  position:fixed;
+  bottom: 10px;
+  right: 20px;
+}
+.contacts{
+  color: #FFD173;
+  text-decoration: none;
+}
+.contactButton{
+  background-color: #FFD173;
+  border-radius: 2px;
+  border: white;
+  color: white;
+  transition-duration: 0.4s;
+  margin-left: 145px;
+  margin-right: 300px;
+  text-decoration: none;
+}
+.contactButton:hover {
+  background-color: #4CAF50; 
+  color: white;
+}
 .button {
   border: none;
   background: none;
@@ -43,16 +49,53 @@ p{
   margin-bottom: 10px;
   text-decoration: none;
 }
-
-.container{
+.homePage{
   width: 100%;
   height: 100%;
   color: #bdc09a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.container h1{
-  font-size: 80px;
+.homePage h1{
+  font-size: 55px;
+  margin-left: 145px;
+  margin-right: 165px;
+  margin-top:400px;
+}
+.homePage h2{
+  font-size:20px;
+  margin-left: 145px;
+  margin-right: 300px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.aboutMePage{
+  width: 100%;
+  height: 100%;
+  color: #bdc09a;
+}
+.aboutMePage h1{
+  font-size: 55px;
   font-weight: 600;
+  margin-left: 145px;
+  margin-right: 300px;
+}
+.aboutMePage h2{
+  font-size:25px;
+  margin-left: 145px;
+  margin-right: 300px;
+}
+.experiencePage{
+  width: 100%;
+  height: 100%;
+  color: #bdc09a;
+}
+.projectsPage{
+  width: 100%;
+  height: 100%;
+  color: #bdc09a;
+}
+a[href*="https://www.linkedin.com/in/elizabeth-coleman-aa8966249/"] {
+background:url(https://www.linkedin.com/favicon.ico) no-repeat left center;
+}
+a[href*="https://github.com/elco5414"] {
+background:url(https://github.com/favicon.ico) no-repeat left center;
 }
