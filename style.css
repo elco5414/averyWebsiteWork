@@ -6,12 +6,8 @@ body {
 .space{
   height:300px;
 }
-img {
-  width: 30px,
-  height: auto
-}
 span{
-  color: black ;
+  color: #000000;
 }
 header{
   height: 39px;
@@ -67,7 +63,57 @@ footer{
   font-family: Verdana, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-.aboutPage h2{
+.aboutPage {
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-column {
+  flex: 1;
+}
+
+.text-column h1 {
+  font-size: 55px;
+  padding: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+.text-column h2,
+.text-column ul {
+  font-size: 20px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin-left: 25px;
+  margin-right: 85px;
+}
+
+.text-column ul {
+  margin-left: 40px;
+}
+
+.aboutPage img {
+  margin-top: 140px;
+  width: 25%;
+  height: auto;
+  margin-right:40px;
+}
+.resumeButton{
+  background-color: #D1F4A4;
+  padding: 20px;
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius:12px;
+  margin-left: 40px;
+}
+.projectsPage h1 {
+  font-size: 55px;
+  padding: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-bottom: 1px solid #000000;
 }
