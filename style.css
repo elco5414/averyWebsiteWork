@@ -135,7 +135,7 @@ input{
   height: 45px;
 }
 form .submit{
-  background: #ff5722;
+  background: #D1F4A4;
   border-color:transparent;
   color: black;
   font-size: 20px;
@@ -146,6 +146,6 @@ form .submit{
 }
 
 form .submit:hover{
-  background-color: green;
+  background-color:  #9999FF;
   cursor: pointer;
 }
