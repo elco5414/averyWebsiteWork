@@ -75,7 +75,7 @@ footer{
 .text-column h1 {
   font-size: 55px;
   padding: 0;
-  margin-left: 25px;
+  margin-left: 135px;
   margin-right: 25px;
   border-bottom: 1px solid #000000;
 }
@@ -85,19 +85,19 @@ footer{
   font-size: 20px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
-  margin-left: 25px;
+  margin-left: 135px;
   margin-right: 85px;
 }
 
 .text-column ul {
-  margin-left: 40px;
+  margin-left:135px;
 }
 
 .aboutPage img {
   margin-top: 140px;
   width: 25%;
   height: auto;
-  margin-right:40px;
+  margin-right:235px;
 }
 .resumeButton{
   background-color: #D1F4A4;
@@ -108,7 +108,7 @@ footer{
   font-size: 16px;
   margin: 4px 2px;
   border-radius:12px;
-  margin-left: 40px;
+  margin-left:135px;
 }
 .projectsPage h1 {
   font-size: 55px;
@@ -132,7 +132,7 @@ form{
   margin-botton: 16px;
 }
 input{
-  height: 45px;
+  height: 65px;
 }
 form .submit{
   background: #D1F4A4;
@@ -149,3 +149,24 @@ form .submit:hover{
   background-color:  #9999FF;
   cursor: pointer;
 }
+footer .GithubIcon{
+ width: 25px;
+ height: auto;
+ background-image: url("https://i.pinimg.com/originals/b3/56/b0/b356b01e33ede16da72c0ee7f6160079.jpg");
+}
+.projectsPage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust this value for spacing between projects */
+}
+
+.projectsPage section {
+    flex: 1;
+    max-width: calc(50% - 20px); /* Two projects side by side, considering the gap */
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+ .projectsPage img {
+    max-width: 100%;
+    height: auto;
+  }
