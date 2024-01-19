@@ -5,21 +5,39 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
   <header class = "header">
-    <div class="button-container">
-    <a href="experience.html" class="button">experience</a>
-    <a href="portfolio.html" class="button">portfolio</a>
-    <a href="about.html" class="button">about</a>
-    <a href="index.html" class="button">home</a>
+    <div id="navbar">
+    <img class="iconImg" src="/Users/elizabethcoleman/general computer projects/lizWebsite/eacoleman.github.io/favicon.png" alt="icon">
+    <a href="#contactPage" class="button">contact</a>
+    <a href="#experiencePage" class="button">experience</a>
+    <a href="#projectsPage" class="button">projects</a>
+    <a href="#aboutPage" class="button">about</a>
+    <a href="#homePage" class="button">home</a>
   </div>
   </header>
 <body>
+      <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
 
-  <div class="space">
-  </div>
-  <div class= "homePage">
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+  <div class= "homePage" id="homePage">
     <h1> welcome, <span class = "auto-type"></span></h1>
     <h2> I like to code so please take a look around!</h2>
-  </div>
 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -32,14 +50,67 @@
     }
     )
   </script>
-  <div class = space>
+ </div>
+
+ <div class="aboutPage" id="aboutPage">
+  <div class="text-column">
+    <img src="/Users/elizabethcoleman/general computer projects/lizWebsite/eacoleman.github.io/starIcon.png" id="starIcon">
+    <h1>about</h1>
+    <h2>My name is Elizabeth Coleman. I am a computer science student earning a bachelor's degree in Computer Science from the University of Colorado Boulder as well as a minor in Leadership Studies. I am very interested in full-stack development, cybersecurity, AI and machine learning, and learning new things in general. Some languages I am proficient in:</h2>
+    <ul>
+      <li>c++</li>
+      <li>c#</li>
+      <li>operating unity</li>
+      <li>html &amp; css</li>
+    </ul>
   </div>
+  <img src="https://i.pinimg.com/originals/05/c2/94/05c294ccb7b8c11ec48a6ed57add3b17.jpg" alt="pic">
+</div>
+
+<div class ="projectsPage" id="projectsPage">
+  <h1>projects</h1>
+    <section class="silver-hollow">
+      <h2>Silver Hollow</h2>
+      <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/410/625/datas/medium.png" alt="silverHollowImg">
+      <p> Silver Hollow is a command line game designed by myself and my partner for the HACKCU9 hackathon in the spring of 2023. The game features choices for the user, a map feature, an inventory that updates itself, and demonstrates a thorough understanding of the C++ computing language. The project won its track in the Hackathon and can be veiwed on both github and devpost, linked below.</p>
+      <a href="https://github.com/elco5414/Silver-Hollow">see on github</a>
+      <a href="https://devpost.com/software/silver-hollow"> see on devpost</a>
+    </section>
+     <section class="Portfolio Websites">
+      <h2>Proffesional Websites</h2>
+      <img>
+       <p>While teaching myself html&&css, I coded websites for myself (you are veiwing that) as well as two of my close freinds in order to improve my skills and help them grow professionally. Both are linked below, and show proffeceiny in web developement.</p>
+      <a href="https://averycalvertmusic.github.io/aveWeb/">Musician Portfolio Website</a>
+       <a href="#">Stategic Communications Portfolio Website</a>
+    </section>
+     <section class="Forest Noise">
+      <h2>Forest Noise</h2>
+      <img src="https://i.pinimg.com/originals/08/1e/cb/081ecb88b28480bb3cd3d06a76e01fc6.png" alt= "game image">
+       <p>Forest Noise is a game I made for my Media Aesthetics class final project which focuses on aspects such as sound and light. It was created using Unity and C#, to demonstrate these aspects within game design.</p>
+       <a href="https://liz11coleman.itch.io/forest-noise">Forest Noise Link</a>
+    </section>
+  </div>
+
+  <div class ="experience" id="experiencePage">
+    <h1>experience</h1>
+      <section class="plcWeb">
+        <h2>Presidental Leadership Class Student Staff</h2>
+        <p>Website and Data Project Position</p>
+      </section>
+    </div>
+
+    <div class ="contact" id="contactPage">
+      <h1>contact me</h1>
+
+      </div>
+
 </body>
+
   <footer>
     <div class ="footer-buttons">
-      <a href="#">linkedin</a>
-      <a href="#">github</a>
-      <a href="#">email</a>
+      <p> Built and designed by Elizabeth Coleman</p>
+      <p> All rights reserved. &copy;</p>
     </div>
+
   </footer>
 </html>
