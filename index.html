@@ -6,7 +6,7 @@
 </head>
   <header class = "header">
     <div id="navbar">
-    <img class="iconImg" src="eacoleman.github.io/favicon.png" alt="icon">
+    <img class="iconImg" src="https://i.pinimg.com/474x/81/43/1a/81431a1af4d893ba13249b41a25e59c6.jpg" alt="icon">
     <a href="#contactPage" class="button">contact</a>
     <a href="#experiencePage" class="button">experience</a>
     <a href="#projectsPage" class="button">projects</a>
@@ -15,6 +15,7 @@
   </div>
   </header>
 <body>
+  <div id="homePage"></div>
       <script>
         // When the user scrolls the page, execute myFunction 
         window.onscroll = function() {myFunction()};
@@ -35,7 +36,7 @@
         }
     </script>
 
-  <div class= "homePage" id="homePage">
+  <div class= "homePage">
     <h1> welcome, <span class = "auto-type"></span></h1>
     <h2> I like to code so please take a look around!</h2>
 
@@ -54,21 +55,30 @@
 
  <div class="aboutPage" id="aboutPage">
   <div class="text-column">
-    <img src="eacoleman.github.io/starIcon.png" id="starIcon">
     <h1>about</h1>
-    <h2>My name is Elizabeth Coleman. I am a computer science student earning a bachelor's degree in Computer Science from the University of Colorado Boulder as well as a minor in Leadership Studies. I am very interested in full-stack development, cybersecurity, AI and machine learning, and learning new things in general. Some languages I am proficient in:</h2>
+    <p>Hi there! My name is Elizabeth Coleman. I am a Computer Science B.S. student at the University of Colorado Boulder, with a Leadership Studies Minor.</p>
+    <p>Some languages/tools I have worked with include: </p>
+    <div class = "listColumn">
     <ul>
       <li>c++</li>
       <li>c#</li>
       <li>operating unity</li>
       <li>html &amp; css</li>
+      <li>Javascript</li>
+      <li>python</li>
     </ul>
+    </div>
+    <p>Aside from coding, I also enjoy being outside as much as possible, reading, and sketching.</p>
   </div>
   <img src="https://i.pinimg.com/originals/05/c2/94/05c294ccb7b8c11ec48a6ed57add3b17.jpg" alt="pic">
+  <!-- <img src="https://i.pinimg.com/736x/f8/69/c6/f869c631f70fbdb1f969c10c05702ce2.jpg" alt="2nd profile pic option" -->
 </div>
 
 <div class ="projectsPage" id="projectsPage">
   <h1>projects</h1>
+
+<!-- avery website whenever that is done: https://averycalvertmusic.github.io/aveWeb/ -->
+
     <section class="silver-hollow">
       <h2>Silver Hollow</h2>
       <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/410/625/datas/medium.png" alt="silverHollowImg">
@@ -77,31 +87,43 @@
       <a href="https://devpost.com/software/silver-hollow"> see on devpost</a>
     </section>
      <section class="Portfolio Websites">
-      <h2>Proffesional Websites</h2>
-      <img>
-       <p>While teaching myself html&&css, I coded websites for myself (you are veiwing that) as well as two of my close freinds in order to improve my skills and help them grow professionally. Both are linked below, and show proffeceiny in web developement.</p>
-      <a href="https://averycalvertmusic.github.io/aveWeb/">Musician Portfolio Website</a>
-       <a href="#">Stategic Communications Portfolio Website</a>
+      <h2>Stock Sensei</h2>
+      <img class="SS"src="https://i.pinimg.com/736x/62/9f/e1/629fe17af6164ea5c56abbe368e2b0fd.jpg" alt="stock sensei logo">
+       <p>This is a full-stack software development group final project from a class that I took (software developement). The website uses Node.EJS, CSS, Javascript , external APIs, and SQL databases.</p>
+      <a href="https://github.com/elco5414/StockSensei">see on github</a>
     </section>
      <section class="Forest Noise">
       <h2>Forest Noise</h2>
       <img src="https://i.pinimg.com/originals/08/1e/cb/081ecb88b28480bb3cd3d06a76e01fc6.png" alt= "game image">
-       <p>Forest Noise is a game I made for my Media Aesthetics class final project which focuses on aspects such as sound and light. It was created using Unity and C#, to demonstrate these aspects within game design.</p>
-       <a href="https://liz11coleman.itch.io/forest-noise">Forest Noise Link</a>
+       <p>Forest Noise is a game I made for my Media Aesthetics class final project which focuses on aspects such as sound and light. It was created using Unity and C#, to demonstrate these aspects within game design. It was my first project ever using Unity or c# , so this was a really cool learning expereince.</p>
+       <a href="https://liz11coleman.itch.io/forest-noise">see on itch.io</a>
     </section>
   </div>
 
   <div class ="experience" id="experiencePage">
     <h1>experience</h1>
       <section class="plcWeb">
-        <h2>Presidental Leadership Class Student Staff</h2>
-        <p>Website and Data Project Position</p>
+        <h2>Presidental Leadership Class Student Staff</h2> 
+        <h3>Website and Data Project Position 2023-Present</h3>
+        <ul>
+          <li>revised and maintained changes to the <a href="https://www.colorado.edu/plc/">PLC website</a></li>
+          <li>used qualtrics to survey and analyze this years portion of the ongoing data project</li>
+        </ul>
       </section>
     </div>
 
     <div class ="contact" id="contactPage">
+      
       <h1>contact me</h1>
-
+      <a class="social" href="https://www.linkedin.com/in/elizabeth-coleman-aa8966249/"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+      </svg></a>
+      <a class="social" href="https://github.com/elco5414"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+      </svg></a>
+      <a class="social" href="mailto:liz11coleman@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+      </svg></a>
       </div>
 
 </body>

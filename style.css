@@ -1,3 +1,12 @@
+/*
+color scheme:
+- white
+- black 
+- light blue #E8FAFA
+- hot pink #A90C45
+- green #D1F4A4
+*/
+
 body {
  background-color:white;
   margin: 0;
@@ -31,6 +40,8 @@ footer{
   font-size: 20px;
   text-decoration: none;
   height: 19px;
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
 }
 
 .button:not(:last-child) {
@@ -53,7 +64,9 @@ footer{
   width: 100%;
   height: 100%;
   color: black;
-  padding: 50px;
+  padding: 20px;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 
 .homePage h1{
@@ -69,112 +82,89 @@ footer{
 }
 .aboutPage {
   display: flex;
-  align-items: flex-start;
-  padding: 50px;
+  padding: 80px;
 }
 
 .text-column {
   flex: 1;
+  padding: 40px;
 }
 
 .text-column h1 {
   font-size: 55px;
   padding: 0;
-  margin-left: 135px;
   margin-right: 25px;
   border-bottom: 1px solid #000000;
 }
 
-.text-column h2,
-.text-column ul {
+.text-column h2,.text-column ul , .text-column p{ 
   font-size: 20px;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  margin-left: 135px;
+  /* font-family: Verdana, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased; */
   margin-right: 85px;
+  font-family: Consolas, monaco, monospace;
 }
 
 .text-column ul {
-  margin-left:135px;
+  margin-left: 0; /* Adjusted margin-left to align with other elements */
 }
 
 .aboutPage img {
   margin-top: 140px;
   width: 25%;
   height: auto;
-  margin-right:235px;
+  margin-left: auto; /* Center the image within the flex container */
+  margin-right: auto;
+  padding: 12px;
 }
-.resumeButton{
-  background-color: #D1F4A4;
-  padding: 20px;
-  text-align:center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  border-radius:12px;
-  margin-left:135px;
+.projectsPage {
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust this value for spacing between projects */
+  padding-bottom: 50px;
 }
+
 .projectsPage h1 {
   font-size: 55px;
   padding: 0;
   margin-left: 25px;
   margin-right: 25px;
   border-bottom: 1px solid #000000;
-}
-form{
-  margin-top: 50px;
-  transition: all 4s ease-in-out;
-}
-.form-control{
-  width:600px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid black;
-  color: black;
-  font-size: 18px;
-}
-input{
-  height: 65px;
-}
-form .submit{
-  background: #D1F4A4;
-  border-color:transparent;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 20px;
-}
-
-form .submit:hover{
-  background-color:  #9999FF;
-  cursor: pointer;
-}
-footer .GithubIcon{
- width: 25px;
- height: auto;
- background-image: url("https://i.pinimg.com/originals/b3/56/b0/b356b01e33ede16da72c0ee7f6160079.jpg");
-}
-.projectsPage {
-   padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust this value for spacing between projects */
+  width: 100%; /* Make the H1 take full width */
 }
 
 .projectsPage section {
-    flex: 1;
-    max-width: calc(50% - 20px); /* Two projects side by side, considering the gap */
-    padding: 20px;
-    border: 1px solid #ddd;
-  }
- .projectsPage img {
-    max-width: 100%;
-    height: auto;
-  }
+  flex: 1;
+  max-width: calc(50% - 20px); /* Two projects side by side, considering the gap */
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.projectsPage img {
+  max-width: 100%;
+  height: auto;
+}
+.SS{
+  max-width: 70%!important;
+}
+
+.projectsPage p, .projectsPage a {
+  font-family: Consolas, monaco, monospace;
+}
+.projectsPage a{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #A90C45; /* Button color */
+  color: #D1F4A4; /* Text color */
+  border: 1px solid #A90C45; /* Button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
   .iconImg{
     width: auto;
     height: 90px;
@@ -190,7 +180,37 @@ footer .GithubIcon{
   .experiencePage{
     padding: 50px;
   }
-  #startIcon{
-    height: 35px;
+  .starIcon{
+    height: 25px;
     width :auto;
   }
+
+  .social{
+    text-align: center;
+    color:#A90C45;
+  }
+  .contact{
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+    font-family: Consolas, monaco, monospace;
+  }
+  .listColumn{
+    column-count: 2;
+  }
+
+  .experience{
+    padding: 80px;
+  }
+  .experience h1{
+    font-size: 55px;
+    border-bottom: 1px solid #000000;
+  }
+  .experience p, .experience ul{
+    font-family: Consolas, monaco, monospace;
+  }
+ .experience h3{
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 16px;
+ }
