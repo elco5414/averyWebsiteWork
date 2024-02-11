@@ -10,6 +10,9 @@ color scheme:
 body {
  background-color:white;
   margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 .space{
   height:300px;
@@ -34,14 +37,13 @@ footer{
   background-color: none; 
   border: none;
   color: black; /* White text */
-  padding: 10px 12px; /* Some padding */
+  padding: 10px 7px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: right; /* Float the buttons side by side */
   font-size: 20px;
   text-decoration: none;
   height: 19px;
   font-family: Consolas, monaco, monospace;
-  font-weight: bold;
 }
 
 .button:not(:last-child) {
@@ -57,7 +59,8 @@ footer{
 
 /* Add a background color on hover */
 .button:hover {
-  background-color: #D1F4A4;
+  background-color: #10844D;
+  color: white;
 }
 .homePage{
   margin-top: 160px;
@@ -157,9 +160,9 @@ footer{
   color: inherit;
   display: inline-block;
   padding: 10px 20px;
-  background-color: #A90C45; /* Button color */
-  color: #D1F4A4; /* Text color */
-  border: 1px solid #A90C45; /* Button border */
+  background-color: #10844D; /* Button color */
+  color: white; /* Text color */
+  border: 1px solid #10844D; /* Button border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer;
   transition: background-color 0.3s ease; 
@@ -171,8 +174,8 @@ footer{
   }
   .sticky {
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 0; 
+    width:98%;
   }
   .sticky + .body {
     padding-top: 60px;
@@ -187,7 +190,7 @@ footer{
 
   .social{
     text-align: center;
-    color:#A90C45;
+    color:#10844D;
   }
   .contact{
     text-align: center;
