@@ -1,0 +1,141 @@
+
+  body {
+    background-color: #020c1b;
+    color: #ccd6f6;
+    font-family: Consolas, monaco, monospace;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    height: 39px;
+    width: 100%;
+    background-color: #020c1b;
+  }
+  
+  #navbar {
+    display: flex;
+    float: left;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  
+  .button {
+    background-color: none;
+    border: none;
+    color: #ccd6f6;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Consolas, monaco, monospace;
+  }
+  
+  .button:hover {
+    background-color: #64ffda;
+    color: black;
+  }
+  
+  .buttonRight {
+    background-color: #020c1b;
+    border: none;
+    color: #64ffda;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Consolas, monaco, monospace;
+  }
+  
+  .buttonRight:hover {
+    background-color: #64ffda;
+    color: black;
+  }
+  
+  h1, h2 {
+    color: #ccd6f6;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 55px;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section p {
+    font-size: 18px;
+    margin: 20px auto;
+    color: #ccd6f6;
+    max-width: 800px;
+  }
+  
+  .reflection {
+    padding: 30px;
+    /* background-color: #ccd6f6; */
+    border-radius: 10px;
+  }
+  
+  .reflection h2 {
+    font-size: 24px;
+    color: #64ffda;
+  }
+  
+  .reflection ul {
+    list-style-type: none;
+    padding-left: 20%;
+  }
+  
+  .reflection li {
+    /* background-color: #ccd6f6; */
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 5px;
+    color: #020c1b;
+  }
+  
+  footer{
+    height: 100px;
+    width: 100%;
+    color: #ccd6f6;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: #64ffda;
+  }
+
+  .relevantCourses {
+    padding: 20px;
+    border-radius: 10px;
+    color: #ccd6f6;
+  }
+  
+  .relevantCourses li {
+    padding: 8px;
+    /* background-color: #ccd6f6; */
+    margin: 5px 0;
+    color: #ccd6f6;
+    border-radius: 5px;
+  }
+  .relevantCourses ul {
+    padding-left: 20%;
+  }
+
+
+
+  

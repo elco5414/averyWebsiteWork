@@ -1,48 +1,53 @@
 /*
 color scheme:
-- white
-- black 
-- light blue #E8FAFA
-- hot pink #A90C45
-- green #D1F4A4
+background-color:#020c1b;
+color: #ccd6f6;
+color: #64ffda;
 */
 
 body {
- background-color:white;
+  background-color:#020c1b;
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-
-}
-.space{
-  height:300px;
+  color: #ccd6f6;
 }
 span{
-  color: #000000;
+  color: #64ffda;
 }
 header{
   height: 39px;
   width: 100%;
 }
-.header{
-  border-bottom: 1px solid #000000;
-}
 footer{
   height: 100px;
   width: 100%;
-  color: black;
+  color: #ccd6f6;
   text-align: center;
 }
 .button{
   background-color: none; 
   border: none;
-  color: black; /* White text */
-  padding: 10px 7px; /* Some padding */
+  color: #ccd6f6; /* White text */
+  padding: 10px 10px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
-  float: right; /* Float the buttons side by side */
+  float: left; /* Float the buttons side by side */
   font-size: 20px;
   text-decoration: none;
   height: 19px;
+  font-family: Consolas, monaco, monospace;
+}
+.buttonRight{
+  /* these are the social buttons */
+  background-color: #020c1b; 
+  border: none;
+  color: #64ffda; /* White text */
+  padding: 15px 10px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: right; /* Float the buttons side by side */
+  font-size: 15px;
+  text-decoration: none;
+  height: 12px;
   font-family: Consolas, monaco, monospace;
 }
 
@@ -59,14 +64,14 @@ footer{
 
 /* Add a background color on hover */
 .button:hover {
-  background-color: #10844D;
-  color: white;
+  background-color: #64ffda;
+  color: black;
 }
 .homePage{
   margin-top: 160px;
   width: 100%;
   height: 100%;
-  color: black;
+  color: #ccd6f6;
   padding: 20px;
   padding-bottom: 200px;
   padding-top: 100px;
@@ -86,24 +91,32 @@ footer{
 .aboutPage {
   display: flex;
   padding: 80px;
+  color: #ccd6f6;
 }
-
-.text-column {
-  flex: 1;
-  padding: 40px;
+.resumeButton {
+  /* get these to fit inside of the "sticky" top bar  */
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 15px 10px;
+  background-color: #64ffda; /* Button color */
+  color: black; /* Text color */
+  border: 1px solid #64ffda; /* Button border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  font-family: Consolas, monaco, monospace;
 }
 
 .text-column h1 {
   font-size: 55px;
   padding: 0;
   margin-right: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #ccd6f6;
 }
 
 .text-column h2,.text-column ul , .text-column p{ 
   font-size: 20px;
-  /* font-family: Verdana, Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased; */
   margin-right: 85px;
   font-family: Consolas, monaco, monospace;
 }
@@ -114,18 +127,20 @@ footer{
 
 .aboutPage img {
   margin-top: 140px;
-  width: 25%;
-  height: auto;
+  width:min-content;
+  height: min-content;
   margin-left: auto; /* Center the image within the flex container */
   margin-right: auto;
   padding: 12px;
 }
+
 .projectsPage {
   padding: 80px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px; /* Adjust this value for spacing between projects */
   padding-bottom: 50px;
+  color: #ccd6f6;
 }
 
 .projectsPage h1 {
@@ -133,7 +148,7 @@ footer{
   padding: 0;
   margin-left: 25px;
   margin-right: 25px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #ccd6f6;
   width: 100%; /* Make the H1 take full width */
 }
 
@@ -141,7 +156,7 @@ footer{
   flex: 1;
   max-width: calc(50% - 20px); /* Two projects side by side, considering the gap */
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccd6f6;
 }
 
 .projectsPage img {
@@ -160,37 +175,30 @@ footer{
   color: inherit;
   display: inline-block;
   padding: 10px 20px;
-  background-color: #10844D; /* Button color */
-  color: white; /* Text color */
-  border: 1px solid #10844D; /* Button border */
+  background-color: #64ffda; /* Button color */
+  color: black; /* Text color */
+  border: 1px solid #64ffda; /* Button border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer;
   transition: background-color 0.3s ease; 
 }
-
-  .iconImg{
-    width: auto;
-    height: 90px;
-  }
   .sticky {
     position: fixed;
     top: 0; 
     width:98%;
+    height:8%;
+    background-color: #020c1b;
   }
   .sticky + .body {
     padding-top: 60px;
   }
   .experiencePage{
     padding: 50px;
+    color: #ccd6f6;
   }
-  .starIcon{
-    height: 25px;
-    width :auto;
-  }
-
   .social{
     text-align: center;
-    color:#10844D;
+    color:#64ffda;
   }
   .contact{
     text-align: center;
@@ -201,13 +209,13 @@ footer{
   .listColumn{
     column-count: 2;
   }
-
   .experience{
     padding: 80px;
+    color: #ccd6f6;
   }
   .experience h1{
     font-size: 55px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ccd6f6;
   }
   .experience p, .experience ul{
     font-family: Consolas, monaco, monospace;
@@ -216,4 +224,7 @@ footer{
   font-family: Consolas, monaco, monospace;
   font-weight: bold;
   font-size: 16px;
+ }
+ .experience section{
+  padding-bottom: 25px;
  }
