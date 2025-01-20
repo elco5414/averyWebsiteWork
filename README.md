@@ -10,9 +10,11 @@ You can also just look up eacoleman.com
 To dos for liz:
 - [ ]  fix personal website / make more in depth and more professional
     - [ ]  add some neat front-end, make smoother
-    - [ ]  make more CV, resume is condensed down
+    - [ ]  make more CV, resume is condensed down -- do i really want to do this tho??
     - [ ]  add some more projects
     - [ ]  organize projects by like year in school - freshman, junior, etc.
     - [ ] change the color scheme again dammit 
 
     -- do i want to keep the resume??? I think maybe not 
+
+Color Scheme Updated: (gonna test those HCI theories)
